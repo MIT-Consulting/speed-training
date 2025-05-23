@@ -4,6 +4,7 @@ import './styles/globals.css'
 // Import core modules
 import { DataProcessor } from './data/data-processor.js'
 import { ProgressTracker } from './components/progress/ProgressTracker.js'
+import { ThemeManager } from './utils/theme-manager.js'
 
 // Import components
 import { SearchComponent } from './components/ui/SearchComponent.js'
@@ -17,6 +18,7 @@ class SpeedTrainingApp {
   constructor() {
     this.dataProcessor = null
     this.progressTracker = null
+    this.themeManager = null
     
     // Components
     this.search = null
@@ -37,6 +39,9 @@ class SpeedTrainingApp {
     try {
       // Show loading state
       this.showLoading()
+      
+      // Initialize theme manager first
+      this.initializeTheme()
       
       // Initialize core systems
       await this.initializeCore()
@@ -60,6 +65,13 @@ class SpeedTrainingApp {
       console.error('Failed to initialize app:', error)
       this.showError('Failed to load the application. Please refresh the page.')
     }
+  }
+
+  /**
+   * Initialize theme management
+   */
+  initializeTheme() {
+    this.themeManager = new ThemeManager()
   }
 
   /**
@@ -500,11 +512,11 @@ class SpeedTrainingApp {
    * Setup global event listeners
    */
   setupEventListeners() {
-    // Theme toggle
+    // Theme toggle using ThemeManager
     const themeToggle = document.getElementById('theme-toggle')
     if (themeToggle) {
       themeToggle.addEventListener('click', () => {
-        this.toggleTheme()
+        this.themeManager.toggleTheme()
       })
     }
 
@@ -648,27 +660,6 @@ class SpeedTrainingApp {
     if (e.key >= '1' && e.key <= '6' && !e.ctrlKey && !e.metaKey && !e.target.matches('input, textarea')) {
       const weekNumber = parseInt(e.key)
       this.showWeek(weekNumber)
-    }
-  }
-
-  /**
-   * Toggle theme
-   */
-  toggleTheme() {
-    const body = document.body
-    const currentTheme = body.dataset.theme || 'light'
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light'
-    
-    body.dataset.theme = newTheme
-    localStorage.setItem('theme', newTheme)
-    
-    // Update theme toggle icon
-    const themeToggle = document.getElementById('theme-toggle')
-    if (themeToggle) {
-      const icon = themeToggle.querySelector('.theme-icon')
-      if (icon) {
-        icon.textContent = newTheme === 'dark' ? '☀️' : '🌙'
-      }
     }
   }
 

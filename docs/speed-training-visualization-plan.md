@@ -50,6 +50,13 @@ This project will create a modern, responsive web application that transforms th
 - **Difficulty Progression**: Visual representation of program advancement
 - **Video Preview Grid**: Thumbnail view of week's exercise videos
 - **Exercise Preview Cards**: Quick view of exercise summaries with expansion options
+- **Section Collapse Management**: Collapsible day sections with individual and global controls
+  - **Individual Day Collapse**: Each day can be expanded/collapsed independently
+  - **Exercise Block Collapse**: Warm-up, A, B, C, D blocks within each day are collapsible
+  - **Global Collapse/Expand Controls**: Master controls to collapse/expand all sections at once
+  - **Collapse State Persistence**: Remember user's preferred collapse states across sessions
+  - **Smart Defaults**: New weeks start with current/next day expanded, others collapsed
+  - **Accessibility Support**: Keyboard navigation and screen reader compatibility for collapse controls
 
 #### 3. Enhanced Daily Workout Interface
 - **Exercise Block Organization**: Collapsible sections for Warm-up, A, B, C, D blocks
@@ -179,6 +186,18 @@ This project will create a modern, responsive web application that transforms th
   --error: #ef4444;
   --watched: #9333ea;        /* Purple for watched videos */
   --mastered: #10b981;       /* Green for mastered exercises */
+  
+  /* Collapsible Interface Colors */
+  --collapse-indicator: #6b7280;     /* Gray for collapse arrows */
+  --collapse-hover: #374151;         /* Darker gray on hover */
+  --expanded-bg: #f8fafc;            /* Light background for expanded sections */
+  --collapsed-bg: #ffffff;           /* White background for collapsed sections */
+  --section-border: #e5e7eb;         /* Light gray borders */
+  --global-control-bg: #3b82f6;      /* Blue for global control buttons */
+  --global-control-hover: #2563eb;   /* Darker blue on hover */
+  --smart-view-bg: #059669;          /* Green for smart view button */
+  --day-header-bg: #f3f4f6;          /* Light gray for day headers */
+  --block-header-bg: #fafafa;        /* Very light gray for block headers */
 }
 ```
 
@@ -190,20 +209,387 @@ This project will create a modern, responsive web application that transforms th
 - **Video UI Font**: 'Roboto' (optimized for video interface elements)
 - **Scale**: Modular scale with clear hierarchy for content layers
 
-### Updated Layout Structure
+### Updated Layout Structure with Collapsible Week View
 ```
-┌─────────────────────────────────────┐
-│ Header (Navigation, Progress)       │
-├─────────────────────────────────────┤
-│ Sidebar    │ Main Content Area      │
-│ - Weeks    │ ┌─────────────────────┐ │
-│ - Filter   │ │ Exercise Card       │ │
-│ - Search   │ │ ├─ Summary Tab      │ │
-│ - Videos   │ │ ├─ Video Tab        │ │
-│ - Summary  │ │ ├─ Details Tab      │ │
-│            │ │ └─ Notes Tab        │ │
-│            │ └─────────────────────┘ │
-└─────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│ Header (Navigation, Progress)                               │
+├─────────────────────────────────────────────────────────────┤
+│ Sidebar    │ Week View with Global Controls                 │
+│ - Weeks    │ ┌─────────────────────────────────────────────┐ │
+│ - Filter   │ │ [📖 Expand All] [📁 Collapse All] [🎯 Smart]│ │
+│ - Search   │ ├─────────────────────────────────────────────┤ │
+│ - Videos   │ │ ▼ Day 1 (75% Complete) [📁][📖]           │ │
+│ - Summary  │ │   ▼ Warm-up Block (3 exercises)             │ │
+│            │ │     Exercise Card with Summary/Video tabs   │ │
+│            │ │   ▶ Block A (collapsed)                     │ │
+│            │ │ ▶ Day 2 (collapsed)                         │ │
+│            │ │ ▼ Day 3 (25% Complete) [📁][📖]           │ │
+│            │ │   ▼ Block A (5 exercises)                   │ │
+│            │ │     Exercise Cards...                       │ │
+│            │ └─────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+
+Legend:
+▼ = Expanded section    ▶ = Collapsed section
+[📁] = Collapse controls    [📖] = Expand controls
+[🎯] = Smart View (show current/upcoming only)
+```
+
+### CSS Specifications for Collapsible Week View
+```css
+/* Global Controls */
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--gray-50);
+  border-radius: 8px;
+  border: 1px solid var(--section-border);
+}
+
+.global-collapse-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.global-control-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.global-control-btn.expand-all,
+.global-control-btn.collapse-all {
+  background: var(--global-control-bg);
+  color: white;
+}
+
+.global-control-btn.smart-view {
+  background: var(--smart-view-bg);
+  color: white;
+}
+
+.global-control-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.global-control-btn.expand-all:hover,
+.global-control-btn.collapse-all:hover {
+  background: var(--global-control-hover);
+}
+
+/* Day Sections */
+.day-section {
+  margin-bottom: 1rem;
+  border: 1px solid var(--section-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.day-section.collapsed {
+  background: var(--collapsed-bg);
+}
+
+.day-section.expanded {
+  background: var(--expanded-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--day-header-bg);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.day-header:hover {
+  background: var(--gray-200);
+}
+
+.day-header:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: -2px;
+}
+
+.day-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.collapse-indicator {
+  font-size: 1rem;
+  color: var(--collapse-indicator);
+  transition: transform 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.collapse-indicator.expanded {
+  transform: rotate(0deg);
+}
+
+.collapse-indicator.collapsed {
+  transform: rotate(-90deg);
+}
+
+.day-header:hover .collapse-indicator {
+  color: var(--collapse-hover);
+}
+
+.day-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.day-date {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.day-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.day-progress-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  width: 60px;
+  height: 6px;
+  background: var(--gray-200);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--completion-green);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.day-focus-badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 4px;
+  color: white;
+}
+
+.day-focus-badge.acceleration {
+  background: var(--acceleration);
+}
+
+.day-focus-badge.speed {
+  background: var(--speed);
+}
+
+.day-focus-badge.agility {
+  background: var(--agility);
+}
+
+/* Day Content */
+.day-content {
+  padding: 0;
+  overflow: hidden;
+}
+
+.day-content[aria-hidden="true"] {
+  display: none;
+}
+
+.day-content[aria-hidden="false"] {
+  animation: expandContent 0.3s ease-out;
+}
+
+@keyframes expandContent {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+/* Exercise Blocks */
+.exercise-block {
+  border-top: 1px solid var(--section-border);
+}
+
+.exercise-block:first-child {
+  border-top: none;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--block-header-bg);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.block-header:hover {
+  background: var(--gray-100);
+}
+
+.block-header:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: -2px;
+}
+
+.block-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.block-collapse-indicator {
+  font-size: 0.875rem;
+  color: var(--collapse-indicator);
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.block-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  margin: 0;
+}
+
+.block-exercise-count {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.block-content {
+  padding: 1rem;
+  background: white;
+}
+
+.block-content[aria-hidden="true"] {
+  display: none;
+}
+
+/* Day Actions */
+.day-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--gray-50);
+  border-top: 1px solid var(--section-border);
+}
+
+.day-action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  background: white;
+  color: var(--gray-700);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-action-btn:hover {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+}
+
+.day-action-btn.completed {
+  background: var(--success);
+  color: white;
+  border-color: var(--success);
+}
+
+/* Keyboard Navigation */
+.day-header:focus-visible,
+.block-header:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+/* Screen Reader Support */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .week-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .global-collapse-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .day-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .day-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-control-btn {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .day-title {
+    font-size: 1rem;
+  }
+  
+  .day-actions {
+    gap: 0.25rem;
+  }
+}
 ```
 
 ### Enhanced Exercise Card with Summary Integration
@@ -602,7 +988,452 @@ class ExerciseCard {
 }
 ```
 
-### 2. Enhanced Search Component with Summary Integration
+### 2. Collapsible Week View Component with Global Controls
+```javascript
+class CollapsibleWeekView {
+  constructor(weekData, weekNumber) {
+    this.weekData = weekData;
+    this.weekNumber = weekNumber;
+    this.collapseStates = this.loadCollapseStates();
+    this.initializeDefaultStates();
+  }
+  
+  initializeDefaultStates() {
+    // Smart defaults: current/next day expanded, others collapsed
+    const today = new Date();
+    const currentDay = this.getCurrentDayIndex(today);
+    
+    if (!this.collapseStates[this.weekNumber]) {
+      this.collapseStates[this.weekNumber] = {
+        days: {},
+        exerciseBlocks: {}
+      };
+    }
+    
+    this.weekData.days.forEach((day, index) => {
+      const dayKey = `day_${index}`;
+      if (this.collapseStates[this.weekNumber].days[dayKey] === undefined) {
+        // Expand current and next day, collapse others
+        this.collapseStates[this.weekNumber].days[dayKey] = 
+          (index === currentDay || index === currentDay + 1) ? false : true;
+      }
+      
+      // Initialize exercise block states
+      if (!this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]) {
+        this.collapseStates[this.weekNumber].exerciseBlocks[dayKey] = {
+          warmup: false,
+          blockA: false,
+          blockB: false,
+          blockC: false,
+          blockD: false
+        };
+      }
+    });
+    
+    this.saveCollapseStates();
+  }
+  
+  render() {
+    return `
+      <div class="week-view" data-week="${this.weekNumber}">
+        <div class="week-header">
+          <h2 class="week-title">Week ${this.weekNumber}</h2>
+          <div class="week-stats">
+            <span class="week-progress">${this.getWeekProgress()}% Complete</span>
+            <span class="week-focus">${this.getWeekFocus()}</span>
+          </div>
+        </div>
+        
+        <div class="week-controls">
+          <div class="global-collapse-controls">
+            <button class="global-control-btn expand-all" 
+                    onclick="this.expandAll()" 
+                    title="Expand All Sections (Ctrl+E)"
+                    aria-label="Expand all days and exercise blocks">
+              📖 Expand All
+            </button>
+            <button class="global-control-btn collapse-all" 
+                    onclick="this.collapseAll()" 
+                    title="Collapse All Sections (Ctrl+C)"
+                    aria-label="Collapse all days and exercise blocks">
+              📁 Collapse All
+            </button>
+            <button class="global-control-btn smart-view" 
+                    onclick="this.applySmartView()" 
+                    title="Smart View: Show current and upcoming workouts"
+                    aria-label="Apply smart view showing relevant days">
+              🎯 Smart View
+            </button>
+          </div>
+          
+          <div class="view-options">
+            <button class="view-toggle compact-view ${this.isCompactView() ? 'active' : ''}" 
+                    onclick="this.toggleCompactView()"
+                    title="Toggle Compact View">
+              📋 Compact
+            </button>
+            <button class="view-toggle summary-view ${this.isSummaryView() ? 'active' : ''}" 
+                    onclick="this.toggleSummaryView()"
+                    title="Toggle Summary View">
+              📝 Summary
+            </button>
+          </div>
+        </div>
+        
+        <div class="week-days">
+          ${this.weekData.days.map((day, dayIndex) => this.renderDay(day, dayIndex)).join('')}
+        </div>
+        
+        <div class="week-summary-stats" ${this.collapseStates[this.weekNumber].showSummary ? '' : 'style="display: none;"'}>
+          ${this.renderWeekSummary()}
+        </div>
+      </div>
+    `;
+  }
+  
+  renderDay(day, dayIndex) {
+    const dayKey = `day_${dayIndex}`;
+    const isCollapsed = this.collapseStates[this.weekNumber].days[dayKey];
+    const dayProgress = this.getDayProgress(day);
+    const dayName = this.getDayName(dayIndex);
+    
+    return `
+      <div class="day-section ${isCollapsed ? 'collapsed' : 'expanded'}" data-day="${dayIndex}">
+        <div class="day-header" 
+             onclick="this.toggleDay(${dayIndex})"
+             onkeydown="this.handleDayKeydown(event, ${dayIndex})"
+             tabindex="0"
+             role="button"
+             aria-expanded="${!isCollapsed}"
+             aria-controls="day-content-${dayIndex}">
+          
+          <div class="day-title-section">
+            <span class="collapse-indicator ${isCollapsed ? 'collapsed' : 'expanded'}" 
+                  aria-hidden="true">
+              ${isCollapsed ? '▶' : '▼'}
+            </span>
+            <h3 class="day-title">${dayName}</h3>
+            <span class="day-date">${this.getDayDate(dayIndex)}</span>
+          </div>
+          
+          <div class="day-meta">
+            <div class="day-progress-indicator">
+              <span class="progress-text">${dayProgress}%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: ${dayProgress}%"></div>
+              </div>
+            </div>
+            <span class="day-focus-badge">${this.getDayFocus(day)}</span>
+            <span class="exercise-count">${this.getTotalExercises(day)} exercises</span>
+          </div>
+        </div>
+        
+        <div class="day-content" 
+             id="day-content-${dayIndex}"
+             ${isCollapsed ? 'style="display: none;"' : ''}
+             aria-hidden="${isCollapsed}">
+          
+          <div class="day-exercise-blocks">
+            ${this.renderExerciseBlocks(day, dayIndex)}
+          </div>
+          
+          <div class="day-actions">
+            <button class="day-action-btn mark-day-complete ${dayProgress === 100 ? 'completed' : ''}"
+                    onclick="this.toggleDayCompletion(${dayIndex})">
+              ${dayProgress === 100 ? '✅ Day Complete' : '⭕ Mark Day Complete'}
+            </button>
+            <button class="day-action-btn collapse-day-blocks"
+                    onclick="this.collapseDayBlocks(${dayIndex})">
+              📁 Collapse Blocks
+            </button>
+            <button class="day-action-btn expand-day-blocks"
+                    onclick="this.expandDayBlocks(${dayIndex})">
+              📖 Expand Blocks
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  renderExerciseBlocks(day, dayIndex) {
+    const blocks = ['warmup', 'blockA', 'blockB', 'blockC', 'blockD'];
+    const dayKey = `day_${dayIndex}`;
+    
+    return blocks.map(blockName => {
+      const exercises = day[blockName] || [];
+      if (exercises.length === 0) return '';
+      
+      const isBlockCollapsed = this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName];
+      const blockProgress = this.getBlockProgress(exercises);
+      const blockTitle = this.getBlockTitle(blockName);
+      
+      return `
+        <div class="exercise-block ${isBlockCollapsed ? 'collapsed' : 'expanded'}" 
+             data-block="${blockName}">
+          
+          <div class="block-header"
+               onclick="this.toggleBlock(${dayIndex}, '${blockName}')"
+               onkeydown="this.handleBlockKeydown(event, ${dayIndex}, '${blockName}')"
+               tabindex="0"
+               role="button"
+               aria-expanded="${!isBlockCollapsed}"
+               aria-controls="block-content-${dayIndex}-${blockName}">
+            
+            <div class="block-title-section">
+              <span class="block-collapse-indicator ${isBlockCollapsed ? 'collapsed' : 'expanded'}"
+                    aria-hidden="true">
+                ${isBlockCollapsed ? '▶' : '▼'}
+              </span>
+              <h4 class="block-title">${blockTitle}</h4>
+              <span class="block-exercise-count">(${exercises.length} exercises)</span>
+            </div>
+            
+            <div class="block-meta">
+              <div class="block-progress">
+                <span class="block-progress-text">${blockProgress}%</span>
+                <div class="block-progress-bar">
+                  <div class="block-progress-fill" style="width: ${blockProgress}%"></div>
+                </div>
+              </div>
+              <span class="estimated-time">${this.getBlockEstimatedTime(exercises)}</span>
+            </div>
+          </div>
+          
+          <div class="block-content"
+               id="block-content-${dayIndex}-${blockName}"
+               ${isBlockCollapsed ? 'style="display: none;"' : ''}
+               aria-hidden="${isBlockCollapsed}">
+            
+            <div class="exercise-list">
+              ${exercises.map((exercise, exerciseIndex) => 
+                new ExerciseCard(exercise, blockName).render()
+              ).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+  
+  renderWeekSummary() {
+    const totalExercises = this.getTotalWeekExercises();
+    const completedExercises = this.getCompletedWeekExercises();
+    const focusDistribution = this.getFocusDistribution();
+    
+    return `
+      <div class="week-summary">
+        <h4>Week ${this.weekNumber} Summary</h4>
+        
+        <div class="summary-stats">
+          <div class="stat-item">
+            <span class="stat-label">Total Exercises:</span>
+            <span class="stat-value">${totalExercises}</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Completed:</span>
+            <span class="stat-value">${completedExercises}/${totalExercises}</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Estimated Time:</span>
+            <span class="stat-value">${this.getWeekEstimatedTime()}</span>
+          </div>
+        </div>
+        
+        <div class="focus-distribution">
+          <h5>Focus Areas</h5>
+          <div class="focus-chart">
+            ${Object.entries(focusDistribution).map(([focus, percentage]) => `
+              <div class="focus-item">
+                <span class="focus-label">${focus}:</span>
+                <div class="focus-bar">
+                  <div class="focus-fill focus-${focus.toLowerCase()}" 
+                       style="width: ${percentage}%"></div>
+                </div>
+                <span class="focus-percentage">${percentage}%</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  // Toggle Functions
+  toggleDay(dayIndex) {
+    const dayKey = `day_${dayIndex}`;
+    const isCurrentlyCollapsed = this.collapseStates[this.weekNumber].days[dayKey];
+    
+    this.collapseStates[this.weekNumber].days[dayKey] = !isCurrentlyCollapsed;
+    this.saveCollapseStates();
+    this.updateDayDisplay(dayIndex);
+    
+    // Announce change for screen readers
+    this.announceToggle(`Day ${dayIndex + 1}`, !isCurrentlyCollapsed ? 'collapsed' : 'expanded');
+  }
+  
+  toggleBlock(dayIndex, blockName) {
+    const dayKey = `day_${dayIndex}`;
+    const isCurrentlyCollapsed = this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName];
+    
+    this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = !isCurrentlyCollapsed;
+    this.saveCollapseStates();
+    this.updateBlockDisplay(dayIndex, blockName);
+    
+    // Announce change for screen readers
+    this.announceToggle(`${this.getBlockTitle(blockName)}`, !isCurrentlyCollapsed ? 'collapsed' : 'expanded');
+  }
+  
+  expandAll() {
+    // Expand all days and exercise blocks
+    this.weekData.days.forEach((day, dayIndex) => {
+      const dayKey = `day_${dayIndex}`;
+      this.collapseStates[this.weekNumber].days[dayKey] = false;
+      
+      Object.keys(this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]).forEach(blockName => {
+        this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = false;
+      });
+    });
+    
+    this.saveCollapseStates();
+    this.updateAllDisplays();
+    this.announceToggle('All sections', 'expanded');
+  }
+  
+  collapseAll() {
+    // Collapse all days and exercise blocks
+    this.weekData.days.forEach((day, dayIndex) => {
+      const dayKey = `day_${dayIndex}`;
+      this.collapseStates[this.weekNumber].days[dayKey] = true;
+      
+      Object.keys(this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]).forEach(blockName => {
+        this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = true;
+      });
+    });
+    
+    this.saveCollapseStates();
+    this.updateAllDisplays();
+    this.announceToggle('All sections', 'collapsed');
+  }
+  
+  applySmartView() {
+    // Smart view: Show current/upcoming workouts, collapse completed/future ones
+    const today = new Date();
+    const currentDay = this.getCurrentDayIndex(today);
+    
+    this.weekData.days.forEach((day, dayIndex) => {
+      const dayKey = `day_${dayIndex}`;
+      const dayProgress = this.getDayProgress(day);
+      
+      // Expand current day and next day, collapse others
+      if (dayIndex === currentDay || dayIndex === currentDay + 1) {
+        this.collapseStates[this.weekNumber].days[dayKey] = false;
+        // Expand blocks for current day
+        Object.keys(this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]).forEach(blockName => {
+          this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = false;
+        });
+      } else if (dayProgress === 100) {
+        // Collapse completed days
+        this.collapseStates[this.weekNumber].days[dayKey] = true;
+      } else {
+        // Collapse future days beyond next
+        this.collapseStates[this.weekNumber].days[dayKey] = true;
+      }
+    });
+    
+    this.saveCollapseStates();
+    this.updateAllDisplays();
+    this.announceToggle('Smart view', 'applied');
+  }
+  
+  collapseDayBlocks(dayIndex) {
+    const dayKey = `day_${dayIndex}`;
+    Object.keys(this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]).forEach(blockName => {
+      this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = true;
+    });
+    this.saveCollapseStates();
+    this.updateDayBlockDisplays(dayIndex);
+  }
+  
+  expandDayBlocks(dayIndex) {
+    const dayKey = `day_${dayIndex}`;
+    Object.keys(this.collapseStates[this.weekNumber].exerciseBlocks[dayKey]).forEach(blockName => {
+      this.collapseStates[this.weekNumber].exerciseBlocks[dayKey][blockName] = false;
+    });
+    this.saveCollapseStates();
+    this.updateDayBlockDisplays(dayIndex);
+  }
+  
+  // Keyboard Navigation Support
+  handleDayKeydown(event, dayIndex) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.toggleDay(dayIndex);
+    } else if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      this.focusNextDay(dayIndex);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      this.focusPreviousDay(dayIndex);
+    }
+  }
+  
+  handleBlockKeydown(event, dayIndex, blockName) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.toggleBlock(dayIndex, blockName);
+    }
+  }
+  
+  // Utility Functions
+  getCurrentDayIndex(date) {
+    // Calculate current day index based on program start date
+    // This would be implemented based on the specific program logic
+    return 0; // Placeholder
+  }
+  
+  announceToggle(section, action) {
+    // Create announcement for screen readers
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.setAttribute('aria-atomic', 'true');
+    announcement.className = 'sr-only';
+    announcement.textContent = `${section} ${action}`;
+    
+    document.body.appendChild(announcement);
+    setTimeout(() => document.body.removeChild(announcement), 1000);
+  }
+  
+  loadCollapseStates() {
+    const saved = localStorage.getItem('weekViewCollapseStates');
+    return saved ? JSON.parse(saved) : {};
+  }
+  
+  saveCollapseStates() {
+    localStorage.setItem('weekViewCollapseStates', JSON.stringify(this.collapseStates));
+  }
+  
+  // Add keyboard shortcuts
+  initializeKeyboardShortcuts() {
+    document.addEventListener('keydown', (event) => {
+      if ((event.ctrlKey || event.metaKey) && !event.shiftKey) {
+        switch(event.key.toLowerCase()) {
+          case 'e':
+            event.preventDefault();
+            this.expandAll();
+            break;
+          case 'c':
+            event.preventDefault();
+            this.collapseAll();
+            break;
+        }
+      }
+    });
+  }
+}
+```
+
+### 3. Enhanced Search Component with Summary Integration
 ```javascript
 class ExerciseSearch {
   constructor() {
@@ -742,7 +1573,7 @@ class ExerciseSearch {
 }
 ```
 
-### 3. Content Analytics Component
+### 4. Content Analytics Component
 ```javascript
 class ContentAnalytics {
   constructor() {
