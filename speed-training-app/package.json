@@ -1,0 +1,19 @@
+{
+  "name": "speed-training-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "animejs": "^4.0.2",
+    "chart.js": "^4.4.9",
+    "dayjs": "^1.11.13"
+  }
+}
