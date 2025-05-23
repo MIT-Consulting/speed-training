@@ -3,12 +3,12 @@
 ## Project Overview
 
 **Project Name:** Speed Training Visualization Dashboard  
-**Purpose:** Create an interactive web application to visualize and navigate the 6-week Field Day speed training program with integrated video demonstrations  
+**Purpose:** Create an interactive web application to visualize and navigate the 6-week Field Day speed training program with integrated video demonstrations and detailed exercise descriptions  
 **Target Users:** Athletes, coaches, fitness enthusiasts, and sports performance professionals  
 
 ## Executive Summary
 
-This project will create a modern, responsive web application that transforms the JSON-based speed training plan into an intuitive, interactive visualization dashboard with embedded video demonstrations. The app will help users understand program structure, track progress, follow the training regimen, and learn proper exercise technique through integrated YouTube video demonstrations.
+This project will create a modern, responsive web application that transforms the JSON-based speed training plan into an intuitive, interactive visualization dashboard with embedded video demonstrations and comprehensive exercise descriptions. The app will help users understand program structure, track progress, follow the training regimen, and learn proper exercise technique through integrated YouTube video demonstrations and detailed exercise summaries.
 
 ## Technology Stack
 
@@ -41,6 +41,7 @@ This project will create a modern, responsive web application that transforms th
 - **Program Statistics**: Total workouts, exercises, estimated time commitment
 - **Quick Navigation**: Jump to any week/day instantly
 - **Video Library Access**: Quick access to all exercise demonstration videos
+- **Exercise Summary Database**: Searchable database of all exercise descriptions
 
 #### 2. Interactive Week View
 - **Week-by-Week Navigation**: Smooth transitions between weeks
@@ -48,79 +49,96 @@ This project will create a modern, responsive web application that transforms th
 - **Focus Area Breakdown**: Pie charts showing exercise distribution
 - **Difficulty Progression**: Visual representation of program advancement
 - **Video Preview Grid**: Thumbnail view of week's exercise videos
+- **Exercise Preview Cards**: Quick view of exercise summaries with expansion options
 
-#### 3. Daily Workout Interface
+#### 3. Enhanced Daily Workout Interface
 - **Exercise Block Organization**: Collapsible sections for Warm-up, A, B, C, D blocks
-- **Enhanced Exercise Cards**: Individual cards for each exercise with:
-  - Exercise name and instructions
-  - Sets/reps information
-  - Notes and tips
+- **Comprehensive Exercise Cards**: Individual cards for each exercise with:
+  - Exercise name and detailed summary description
+  - Sets/reps information with visual indicators
+  - Comprehensive notes and coaching tips
   - **Video Demonstration Tab**: Embedded YouTube player
-  - Completion checkboxes
-  - Timer integration
-- **Block Progress**: Visual completion indicators
-- **Video Navigation**: Jump between exercise videos within a workout
+  - **Exercise Details Tab**: Full exercise summary with technique breakdown
+  - **Personal Notes Tab**: User-generated notes and modifications
+  - Completion checkboxes with progress indicators
+  - Timer integration with exercise-specific durations
+- **Block Progress**: Visual completion indicators with summary statistics
+- **Exercise Search**: Find exercises by name or description content
+- **Smart Suggestions**: Related exercises based on movement patterns in summaries
 
-#### 4. Video Integration System
+#### 4. Advanced Video Integration System
 - **Embedded YouTube Players**: Clean integration using YouTube iframe API
-- **Tabbed Interface**: Video demonstrations in collapsible tabs within exercise cards
+- **Multi-Tab Interface**: Exercise information, video demonstrations, and personal notes
 - **Lazy Loading**: Videos load only when tab is opened to optimize performance
 - **Video Controls**: 
   - Play/pause functionality
   - Speed control (0.5x, 1x, 1.25x, 1.5x)
   - Full-screen mode
   - Video bookmarking for key moments
+- **Exercise-Video Synchronization**: Video content aligned with exercise summary highlights
 - **Mobile Optimization**: Touch-friendly video controls and responsive sizing
 - **Offline Indicators**: Clear messaging when videos are unavailable offline
 
-#### 5. Progress Tracking System
+#### 5. Enhanced Progress Tracking System
 - **Workout Completion**: Mark individual exercises and days as complete
 - **Progress Analytics**: Charts showing completion rates and patterns
 - **Streak Tracking**: Consecutive workout days visualization
+- **Exercise Mastery Tracking**: Track understanding and proficiency based on exercise summaries
 - **Performance Notes**: Add personal notes and observations
 - **Video Watch History**: Track which demonstration videos have been viewed
+- **Exercise Difficulty Assessment**: Self-rating system based on exercise summary complexity
 
-#### 6. Search & Filter System
-- **Exercise Search**: Find specific exercises across all weeks
+#### 6. Advanced Search & Filter System
+- **Exercise Search**: Find specific exercises across all weeks by name or summary content
+- **Semantic Search**: Search within exercise summaries for technique keywords
 - **Filter by Focus**: Show only Acceleration, Speed, or COD exercises
 - **Filter by Equipment**: Identify exercises requiring specific equipment
+- **Filter by Complexity**: Sort exercises by movement complexity using summary analysis
+- **Movement Pattern Search**: Find exercises with similar movement patterns
 - **Video Search**: Find exercises by searching video content or descriptions
-- **Quick Exercise Reference**: Searchable exercise database with video thumbnails
+- **Quick Exercise Reference**: Searchable exercise database with summaries and video thumbnails
 
 ### Advanced Features
 
 #### 7. Interactive Visualizations
-- **Program Flow Diagram**: Visual representation of program structure
-- **Exercise Progression Maps**: Show how exercises evolve weekly with video previews
-- **Training Load Visualization**: Charts showing intensity progression
-- **Focus Area Distribution**: Interactive charts by week/day
+- **Program Flow Diagram**: Visual representation of program structure with exercise progression
+- **Exercise Progression Maps**: Show how exercises evolve weekly with detailed summaries
+- **Training Load Visualization**: Charts showing intensity progression based on exercise complexity
+- **Focus Area Distribution**: Interactive charts by week/day with exercise breakdowns
 - **Video Engagement Analytics**: Track most watched videos and user preferences
+- **Exercise Complexity Visualization**: Charts showing difficulty progression using summary analysis
 
-#### 8. User Experience Enhancements
+#### 8. Enhanced User Experience
 - **Responsive Design**: Mobile-first approach with tablet/desktop optimization
 - **Dark/Light Mode**: Theme switching with system preference detection
 - **Offline Support**: Service Worker for offline access (excluding videos)
-- **Print-Friendly Views**: Optimized layouts for printing workout cards with QR codes to videos
+- **Print-Friendly Views**: Optimized layouts for printing workout cards with exercise summaries and QR codes to videos
 - **Video Accessibility**: Closed captions where available, audio descriptions
+- **Exercise Summary Read-Aloud**: Text-to-speech for exercise descriptions
+- **Smart Exercise Recommendations**: Suggest modifications based on exercise summary analysis
 
 #### 9. Customization Options
 - **Personal Schedule**: Adapt to user's preferred training days
-- **Exercise Modifications**: Notes for exercise substitutions
+- **Exercise Modifications**: Notes for exercise substitutions with alternative exercise suggestions
 - **Rest Timer**: Integrated countdown timers for rest periods
 - **Goal Setting**: Personal targets and milestone tracking
 - **Video Preferences**: Save preferred playback speed and quality settings
 - **Favorite Videos**: Bookmark frequently referenced demonstration videos
+- **Exercise Notes Expansion**: Detailed personal notes linked to exercise summaries
+- **Difficulty Scaling**: Adjust exercise complexity based on fitness level
 
-## User Interface Design
+## Enhanced User Interface Design
 
 ### Design Principles
-- **Clean & Modern**: Minimalist design with focus on content and video integration
-- **Intuitive Navigation**: Clear information hierarchy with seamless video access
-- **Performance Focused**: Fast loading and smooth interactions with optimized video loading
-- **Accessibility First**: WCAG 2.1 AA compliance including video accessibility
-- **Mobile-First Video**: Touch-optimized video controls and responsive video sizing
+- **Information-Rich**: Comprehensive display of exercise summaries without overwhelming users
+- **Progressive Disclosure**: Detailed information available on demand through expandable sections
+- **Contextual Learning**: Exercise summaries integrated seamlessly with video demonstrations
+- **Intuitive Navigation**: Clear information hierarchy with seamless access to detailed descriptions
+- **Performance Focused**: Fast loading and smooth interactions with optimized content loading
+- **Accessibility First**: WCAG 2.1 AA compliance including video and text accessibility
+- **Mobile-First Content**: Touch-optimized controls with readable exercise descriptions
 
-### Color Scheme
+### Enhanced Color Scheme
 ```css
 :root {
   /* Primary Colors */
@@ -133,10 +151,22 @@ This project will create a modern, responsive web application that transforms th
   --speed: #3b82f6;          /* Blue */
   --agility: #10b981;        /* Green */
   
+  /* Content Hierarchy Colors */
+  --exercise-name: #1f2937;
+  --exercise-summary: #374151;
+  --exercise-notes: #6b7280;
+  --highlight-text: #f59e0b;
+  
   /* Video Interface Colors */
   --video-bg: #000000;
   --video-controls: #ffffff;
   --video-accent: #ff0000;   /* YouTube red */
+  
+  /* Interactive Elements */
+  --tab-active: #3b82f6;
+  --tab-inactive: #9ca3af;
+  --completion-green: #22c55e;
+  --summary-bg: #f8fafc;
   
   /* Neutral Colors */
   --gray-50: #f9fafb;
@@ -148,16 +178,19 @@ This project will create a modern, responsive web application that transforms th
   --warning: #f59e0b;
   --error: #ef4444;
   --watched: #9333ea;        /* Purple for watched videos */
+  --mastered: #10b981;       /* Green for mastered exercises */
 }
 ```
 
-### Typography
+### Enhanced Typography
 - **Primary Font**: 'Inter' (modern, readable sans-serif)
+- **Exercise Names**: Bold weight for immediate recognition
+- **Exercise Summaries**: Regular weight with optimized line-height for readability
 - **Accent Font**: 'JetBrains Mono' (for data/numbers)
 - **Video UI Font**: 'Roboto' (optimized for video interface elements)
-- **Scale**: Modular scale with clear hierarchy
+- **Scale**: Modular scale with clear hierarchy for content layers
 
-### Layout Structure
+### Updated Layout Structure
 ```
 ┌─────────────────────────────────────┐
 │ Header (Navigation, Progress)       │
@@ -165,35 +198,38 @@ This project will create a modern, responsive web application that transforms th
 │ Sidebar    │ Main Content Area      │
 │ - Weeks    │ ┌─────────────────────┐ │
 │ - Filter   │ │ Exercise Card       │ │
-│ - Search   │ │ ├─ Info Tab        │ │
-│ - Videos   │ │ ├─ Video Tab       │ │
-│            │ │ └─ Notes Tab       │ │
+│ - Search   │ │ ├─ Summary Tab      │ │
+│ - Videos   │ │ ├─ Video Tab        │ │
+│ - Summary  │ │ ├─ Details Tab      │ │
+│            │ │ └─ Notes Tab        │ │
 │            │ └─────────────────────┘ │
 └─────────────────────────────────────┘
 ```
 
-### Video Integration Design
-
-#### Exercise Card with Video Tabs
+### Enhanced Exercise Card with Summary Integration
 ```
 ┌─────────────────────────────────────┐
 │ Exercise Name                   [✓] │
+│ Brief Summary (first 100 chars)    │
 ├─────────────────────────────────────┤
-│ [Info] [📹 Video] [Notes]          │
+│ [Summary] [📹 Video] [Details] [📝] │
 ├─────────────────────────────────────┤
 │ Content Area:                       │
 │ ┌─────────────────────────────────┐ │
-│ │ Video Player / Exercise Info    │ │
+│ │ Full Exercise Summary /         │ │
+│ │ Video Player /                  │ │
+│ │ Exercise Details /              │ │
+│ │ Personal Notes                  │ │
 │ │                                 │ │
-│ │ [Play] [⏸] [⏭] [Settings]     │ │
+│ │ [Action Buttons]                │ │
 │ └─────────────────────────────────┘ │
 └─────────────────────────────────────┘
 ```
 
 ## Implementation Phases
 
-### Phase 1: Foundation (Week 1-2)
-**Goal**: Establish core architecture and basic functionality
+### Phase 1: Foundation + Summary Integration (Week 1-2)
+**Goal**: Establish core architecture with exercise summary integration
 
 #### Tasks:
 1. **Project Setup**
@@ -202,235 +238,229 @@ This project will create a modern, responsive web application that transforms th
    - Set up development environment
    - Add YouTube API integration setup
 
-2. **Data Processing**
-   - Create JSON data parser with video URL extraction
-   - Build data transformation utilities
-   - Implement search/filter logic including video content
+2. **Enhanced Data Processing**
+   - Create JSON data parser with exercise summary extraction
+   - Build data transformation utilities with summary indexing
+   - Implement search/filter logic including summary content
    - Video URL validation and sanitization
+   - Exercise summary text processing and keyword extraction
 
-3. **Core Layout**
-   - Implement responsive grid system
-   - Create navigation components
-   - Build sidebar structure
-   - Design video-compatible layout framework
+3. **Core Layout with Content Hierarchy**
+   - Implement responsive grid system optimized for text content
+   - Create navigation components with summary preview
+   - Build sidebar structure with summary search
+   - Design content-rich layout framework
 
-4. **Basic Views**
-   - Program overview page
-   - Week list view with video thumbnails
-   - Day detail view
-   - Basic video player integration
+4. **Basic Views with Summary Display**
+   - Program overview page with exercise summary statistics
+   - Week list view with exercise summaries and video thumbnails
+   - Day detail view with expandable exercise summaries
+   - Basic video player integration with summary correlation
 
 #### Deliverables:
-- Functional navigation between weeks/days
-- Basic responsive layout with video support
-- Data loading and parsing system with video URLs
-- Initial YouTube embed integration
+- Functional navigation between weeks/days with summary previews
+- Content-rich responsive layout with exercise summary display
+- Enhanced data loading and parsing system with summary indexing
+- Initial YouTube embed integration with summary context
 
-### Phase 2: Core Features + Video Integration (Week 3-4)
-**Goal**: Implement primary user interface and video functionality
+### Phase 2: Enhanced Exercise Interface + Advanced Summary Features (Week 3-4)
+**Goal**: Implement comprehensive exercise interface with full summary integration
 
 #### Tasks:
-1. **Enhanced Exercise Interface**
-   - Tabbed exercise card components
-   - Video player integration with YouTube iframe API
-   - Lazy loading implementation for videos
-   - Video controls and settings
+1. **Advanced Exercise Interface**
+   - Multi-tabbed exercise card components with summary tab
+   - Exercise summary display with formatting and highlighting
+   - Video player integration with summary-video alignment
+   - Lazy loading implementation for content and videos
+   - Progressive disclosure of detailed exercise information
 
-2. **Progress System**
-   - Local storage integration
-   - Progress calculation logic
-   - Visual indicators
-   - Video watch tracking
+2. **Enhanced Progress System**
+   - Local storage integration with exercise understanding tracking
+   - Progress calculation logic including summary mastery
+   - Visual indicators for exercise comprehension
+   - Video watch tracking with summary correlation
 
-3. **Search & Filter**
-   - Real-time search functionality
-   - Multi-criteria filtering including video content
-   - Results highlighting
-   - Video thumbnail previews
+3. **Advanced Search & Filter**
+   - Real-time search functionality across exercise summaries
+   - Semantic search within exercise descriptions
+   - Multi-criteria filtering including summary keywords
+   - Results highlighting with summary excerpts
+   - Video thumbnail previews with summary context
 
-4. **Responsive Video Design**
-   - Mobile optimization for video players
-   - Touch-friendly video controls
-   - Tablet layouts with optimal video sizing
-   - Video accessibility features
+4. **Responsive Content Design**
+   - Mobile optimization for exercise summary reading
+   - Touch-friendly content navigation
+   - Tablet layouts with optimal content and video balance
+   - Text accessibility features with summary read-aloud
 
 #### Deliverables:
-- Complete workout interface with video integration
-- Progress tracking system with video analytics
-- Search and filter functionality including videos
-- Mobile-responsive design with optimized video experience
+- Comprehensive workout interface with full summary integration
+- Advanced progress tracking system with exercise mastery metrics
+- Semantic search and filter functionality across all content
+- Mobile-responsive design optimized for content consumption
 
-### Phase 3: Advanced Video Features + Visualizations (Week 5-6)
-**Goal**: Add interactive charts, advanced video features, and enhanced visualizations
+### Phase 3: Advanced Features + Content Analytics (Week 5-6)
+**Goal**: Add interactive analytics, advanced content features, and enhanced visualizations
 
 #### Tasks:
-1. **Advanced Video Features**
-   - Video bookmarking and favorites
-   - Playback speed controls
-   - Video quality selection
-   - Watch history and analytics
+1. **Advanced Content Features**
+   - Exercise summary bookmarking and favorites
+   - Content highlighting and personal annotations
+   - Exercise difficulty assessment based on summaries
+   - Related exercise suggestions using summary analysis
 
-2. **Chart Integration**
-   - Progress charts (Chart.js) with video engagement data
-   - Training distribution visualizations
-   - Video usage analytics
-   - Completion analytics with video correlation
+2. **Enhanced Chart Integration**
+   - Progress charts (Chart.js) with exercise mastery data
+   - Training distribution visualizations with content complexity
+   - Exercise understanding analytics
+   - Completion analytics with summary engagement correlation
 
-3. **Animation System**
-   - Page transitions (Anime.js)
-   - Video loading animations
-   - Micro-interactions for video interface
-   - Smooth tab switching
+3. **Smart Content System**
+   - Exercise recommendation engine based on summary analysis
+   - Movement pattern recognition from descriptions
+   - Difficulty progression tracking using summary complexity
+   - Personalized exercise modifications
 
-4. **Advanced Features**
-   - Timer integration with video sync
-   - Export functionality including video links
-   - Print optimization with QR codes to videos
+4. **Advanced Analytics**
+   - Content engagement tracking (time spent reading summaries)
+   - Exercise comprehension analytics
+   - Video-summary correlation metrics
+   - Learning progression visualization
 
 #### Deliverables:
-- Advanced video functionality and analytics
-- Interactive data visualizations including video metrics
-- Smooth animations and transitions
-- Enhanced timer and export features
+- Advanced content functionality and analytics
+- Interactive data visualizations including content engagement metrics
+- Smart exercise recommendation system
+- Comprehensive learning and progression tracking
 
-### Phase 4: Polish, Optimization & Video Performance (Week 7-8)
-**Goal**: Finalize user experience and optimize performance, especially video loading
+### Phase 4: Polish, Optimization & Content Performance (Week 7-8)
+**Goal**: Finalize user experience and optimize content delivery
 
 #### Tasks:
-1. **Performance Optimization**
-   - Code splitting and lazy loading
-   - Video preloading strategies
-   - Bundle size optimization
-   - Video bandwidth optimization
+1. **Content Performance Optimization**
+   - Text content optimization and compression
+   - Summary indexing and search optimization
+   - Progressive content loading strategies
+   - Video-content synchronization optimization
 
-2. **Accessibility**
-   - Keyboard navigation for video controls
-   - Screen reader support for video content
-   - Video captions and audio descriptions
-   - Color contrast validation
+2. **Enhanced Accessibility**
+   - Keyboard navigation for all content
+   - Screen reader optimization for exercise summaries
+   - Content readability optimization
+   - Multi-language support preparation
 
-3. **Testing & Debugging**
-   - Cross-browser video compatibility testing
-   - Mobile device video testing
-   - Performance auditing with video load testing
-   - Video API error handling
+3. **Comprehensive Testing**
+   - Content accuracy and consistency validation
+   - Cross-device content rendering testing
+   - Performance auditing with content-heavy pages
+   - Summary search functionality testing
 
-4. **Documentation**
-   - User guide including video features
-   - Developer documentation for video integration
-   - Video accessibility guidelines
-   - Deployment instructions
+4. **Complete Documentation**
+   - User guide including all content features
+   - Exercise summary style guide
+   - Content accessibility guidelines
+   - Developer documentation for content integration
 
 #### Deliverables:
-- Production-ready application with optimized video performance
-- Complete documentation including video features
-- Performance optimized build with video considerations
+- Production-ready application with optimized content delivery
+- Complete documentation including content management guidelines
+- Performance optimized build with content considerations
 
-## File Structure
+## Enhanced Key Components Specification
 
-```
-speed-training-app/
-├── public/
-│   ├── icons/
-│   ├── images/
-│   └── video-thumbnails/
-├── src/
-│   ├── components/
-│   │   ├── chart/
-│   │   ├── exercise/
-│   │   │   ├── ExerciseCard.js
-│   │   │   ├── ExerciseVideo.js
-│   │   │   └── VideoTabs.js
-│   │   ├── navigation/
-│   │   ├── progress/
-│   │   ├── video/
-│   │   │   ├── VideoPlayer.js
-│   │   │   ├── VideoControls.js
-│   │   │   ├── VideoThumbnail.js
-│   │   │   └── VideoLibrary.js
-│   │   └── ui/
-│   ├── data/
-│   │   ├── training-plan.json
-│   │   ├── data-processor.js
-│   │   └── video-processor.js
-│   ├── styles/
-│   │   ├── components/
-│   │   │   ├── exercise-cards.css
-│   │   │   └── video-player.css
-│   │   ├── globals.css
-│   │   ├── reset.css
-│   │   └── variables.css
-│   ├── utils/
-│   │   ├── storage.js
-│   │   ├── calculations.js
-│   │   ├── video-utils.js
-│   │   └── helpers.js
-│   ├── views/
-│   │   ├── Dashboard.js
-│   │   ├── WeekView.js
-│   │   ├── DayView.js
-│   │   ├── ExerciseDetail.js
-│   │   └── VideoLibrary.js
-│   ├── app.js
-│   └── main.js
-├── docs/
-├── tests/
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
-## Key Components Specification
-
-### 1. Enhanced ExerciseCard Component with Video Integration
+### 1. Advanced ExerciseCard Component with Full Summary Integration
 ```javascript
 class ExerciseCard {
   constructor(exercise, blockName) {
     this.exercise = exercise;
     this.blockName = blockName;
     this.completed = false;
-    this.activeTab = 'info'; // 'info', 'video', 'notes'
+    this.activeTab = 'summary'; // 'summary', 'video', 'details', 'notes'
     this.videoWatched = false;
+    this.summaryRead = false;
+    this.masteryLevel = 0; // 0-5 scale based on user self-assessment
   }
   
   render() {
     return `
-      <div class="exercise-card ${this.completed ? 'completed' : ''}">
+      <div class="exercise-card ${this.completed ? 'completed' : ''}" data-mastery="${this.masteryLevel}">
         <div class="exercise-header">
-          <h4>${this.exercise.name}</h4>
-          <button class="complete-btn">${this.completed ? '✓' : '○'}</button>
+          <h4 class="exercise-name">${this.exercise.name}</h4>
+          <div class="exercise-meta">
+            <span class="mastery-indicator" title="Mastery Level: ${this.masteryLevel}/5">
+              ${'★'.repeat(this.masteryLevel)}${'☆'.repeat(5-this.masteryLevel)}
+            </span>
+            <button class="complete-btn">${this.completed ? '✓' : '○'}</button>
+          </div>
+        </div>
+        
+        <div class="exercise-preview">
+          <p class="summary-preview">${this.getSummaryPreview()}</p>
+          ${this.exercise.sets_reps ? `<span class="sets-reps-badge">${this.exercise.sets_reps}</span>` : ''}
         </div>
         
         <div class="exercise-tabs">
-          <button class="tab ${this.activeTab === 'info' ? 'active' : ''}" 
-                  data-tab="info">Info</button>
+          <button class="tab ${this.activeTab === 'summary' ? 'active' : ''}" 
+                  data-tab="summary">
+            📖 Summary ${this.summaryRead ? '✓' : ''}
+          </button>
           ${this.exercise.video_url ? `
             <button class="tab ${this.activeTab === 'video' ? 'active' : ''}" 
                     data-tab="video">
               📹 Video ${this.videoWatched ? '✓' : ''}
             </button>
           ` : ''}
+          <button class="tab ${this.activeTab === 'details' ? 'active' : ''}" 
+                  data-tab="details">⚙️ Details</button>
           <button class="tab ${this.activeTab === 'notes' ? 'active' : ''}" 
-                  data-tab="notes">Notes</button>
+                  data-tab="notes">📝 Notes</button>
         </div>
         
         <div class="exercise-content">
           ${this.renderTabContent()}
         </div>
+        
+        <div class="exercise-actions">
+          ${this.renderActionButtons()}
+        </div>
       </div>
     `;
   }
   
+  getSummaryPreview() {
+    const summary = this.exercise.exercise_summary || '';
+    return summary.length > 100 ? summary.substring(0, 100) + '...' : summary;
+  }
+  
   renderTabContent() {
     switch(this.activeTab) {
-      case 'info':
+      case 'summary':
         return `
-          <div class="sets-reps">${this.exercise.sets_reps}</div>
-          ${this.exercise.notes ? `<p class="exercise-notes">${this.exercise.notes}</p>` : ''}
+          <div class="exercise-summary-content">
+            <div class="full-summary">
+              <p class="exercise-summary">${this.exercise.exercise_summary || 'No summary available'}</p>
+            </div>
+            ${this.exercise.exercise_summary ? `
+              <div class="summary-actions">
+                <button class="read-aloud-btn" onclick="this.readAloud()">🔊 Read Aloud</button>
+                <button class="highlight-btn" onclick="this.toggleHighlight()">🖍️ Highlight</button>
+                <button class="bookmark-btn" onclick="this.bookmarkExercise()">🔖 Bookmark</button>
+              </div>
+            ` : ''}
+            <div class="exercise-metadata">
+              <span class="focus-area">${this.determineFocusArea()}</span>
+              <span class="complexity-level">${this.determineComplexity()}</span>
+            </div>
+          </div>
         `;
       case 'video':
         return this.exercise.video_url ? `
           <div class="video-container">
+            <div class="video-summary-sync">
+              <button class="sync-btn" onclick="this.syncVideoWithSummary()">
+                🔗 Sync with Summary
+              </button>
+            </div>
             <iframe 
               src="${this.getEmbedUrl(this.exercise.video_url)}"
               frameborder="0"
@@ -440,256 +470,390 @@ class ExerciseCard {
             <div class="video-controls">
               <button class="video-bookmark">🔖 Bookmark</button>
               <button class="video-fullscreen">⛶ Fullscreen</button>
+              <button class="video-summary-overlay">📖 Show Summary Overlay</button>
             </div>
           </div>
         ` : '<p>No video available</p>';
+      case 'details':
+        return `
+          <div class="exercise-details">
+            <div class="sets-reps-detail">
+              <h5>Sets & Reps</h5>
+              <p class="sets-reps">${this.exercise.sets_reps || 'Not specified'}</p>
+            </div>
+            ${this.exercise.notes ? `
+              <div class="exercise-notes-detail">
+                <h5>Coaching Notes</h5>
+                <p class="exercise-notes">${this.exercise.notes}</p>
+              </div>
+            ` : ''}
+            <div class="exercise-analysis">
+              <h5>Movement Analysis</h5>
+              <div class="movement-tags">
+                ${this.generateMovementTags().map(tag => `<span class="movement-tag">${tag}</span>`).join('')}
+              </div>
+            </div>
+            <div class="difficulty-assessment">
+              <h5>Difficulty Assessment</h5>
+              <div class="mastery-controls">
+                <label>Rate your mastery (1-5):</label>
+                <div class="star-rating">
+                  ${[1,2,3,4,5].map(i => `
+                    <button class="star ${i <= this.masteryLevel ? 'filled' : ''}" 
+                            onclick="this.setMastery(${i})">★</button>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
       case 'notes':
         return `
-          <textarea class="personal-notes" 
-                    placeholder="Add your personal notes...">${this.getPersonalNotes()}</textarea>
+          <div class="personal-notes-section">
+            <textarea class="personal-notes" 
+                      placeholder="Add your personal notes and observations...">${this.getPersonalNotes()}</textarea>
+            <div class="notes-actions">
+              <button class="save-notes-btn" onclick="this.saveNotes()">💾 Save Notes</button>
+              <button class="voice-notes-btn" onclick="this.recordVoiceNote()">🎤 Voice Note</button>
+            </div>
+            <div class="related-exercises">
+              <h5>Related Exercises</h5>
+              <div class="related-list">
+                ${this.getRelatedExercises().map(ex => `
+                  <div class="related-item" onclick="this.navigateToExercise('${ex.id}')">
+                    <span class="related-name">${ex.name}</span>
+                    <span class="related-similarity">${ex.similarity}% similar</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
         `;
       default:
         return '';
     }
   }
   
-  getEmbedUrl(youtubeUrl) {
-    // Convert YouTube URL to embed format
-    const videoId = this.extractVideoId(youtubeUrl);
-    return `https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${window.location.origin}`;
+  renderActionButtons() {
+    return `
+      <div class="action-buttons">
+        <button class="mark-complete-btn ${this.completed ? 'completed' : ''}" 
+                onclick="this.toggleCompletion()">
+          ${this.completed ? '✅ Completed' : '⭕ Mark Complete'}
+        </button>
+        <button class="find-similar-btn" onclick="this.findSimilarExercises()">
+          🔍 Find Similar
+        </button>
+        <button class="share-btn" onclick="this.shareExercise()">
+          📤 Share
+        </button>
+      </div>
+    `;
   }
   
-  extractVideoId(url) {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-    const match = url.match(regExp);
-    return (match && match[2].length === 11) ? match[2] : null;
+  determineFocusArea() {
+    const summary = this.exercise.exercise_summary?.toLowerCase() || '';
+    if (summary.includes('acceleration') || summary.includes('explosive')) return 'Acceleration';
+    if (summary.includes('speed') || summary.includes('top speed')) return 'Speed';
+    if (summary.includes('lateral') || summary.includes('agility') || summary.includes('direction')) return 'Agility';
+    return 'General';
+  }
+  
+  determineComplexity() {
+    const summary = this.exercise.exercise_summary || '';
+    const keywords = ['basic', 'simple', 'beginner', 'advanced', 'complex', 'coordination', 'multiple'];
+    let complexity = 1;
+    
+    if (summary.toLowerCase().includes('advanced') || summary.toLowerCase().includes('complex')) complexity = 4;
+    else if (summary.toLowerCase().includes('coordination') || summary.toLowerCase().includes('multiple')) complexity = 3;
+    else if (summary.toLowerCase().includes('basic') || summary.toLowerCase().includes('simple')) complexity = 1;
+    else complexity = 2;
+    
+    return `Level ${complexity}/4`;
+  }
+  
+  generateMovementTags() {
+    const summary = this.exercise.exercise_summary?.toLowerCase() || '';
+    const tags = [];
+    
+    if (summary.includes('jump') || summary.includes('hop')) tags.push('Plyometric');
+    if (summary.includes('lateral') || summary.includes('sideways')) tags.push('Lateral');
+    if (summary.includes('sprint') || summary.includes('run')) tags.push('Sprint');
+    if (summary.includes('balance') || summary.includes('stability')) tags.push('Balance');
+    if (summary.includes('coordination')) tags.push('Coordination');
+    if (summary.includes('power') || summary.includes('explosive')) tags.push('Power');
+    if (summary.includes('hip') || summary.includes('core')) tags.push('Core');
+    
+    return tags.length > 0 ? tags : ['General Movement'];
+  }
+  
+  getRelatedExercises() {
+    // Implement similarity algorithm based on exercise summaries
+    // Return array of related exercises with similarity scores
+    return [];
+  }
+  
+  readAloud() {
+    if ('speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(this.exercise.exercise_summary);
+      speechSynthesis.speak(utterance);
+    }
   }
 }
 ```
 
-### 2. VideoPlayer Component
+### 2. Enhanced Search Component with Summary Integration
 ```javascript
-class VideoPlayer {
-  constructor(videoUrl, containerId) {
-    this.videoUrl = videoUrl;
-    this.containerId = containerId;
-    this.player = null;
-    this.isLoaded = false;
+class ExerciseSearch {
+  constructor() {
+    this.exercises = [];
+    this.searchIndex = {};
+    this.summaryIndex = {};
+    this.initializeSearch();
   }
   
-  async loadVideo() {
-    if (this.isLoaded) return;
+  initializeSearch() {
+    // Build search index including exercise summaries
+    this.exercises.forEach(exercise => {
+      this.indexExercise(exercise);
+    });
+  }
+  
+  indexExercise(exercise) {
+    // Index exercise name, summary, and notes for search
+    const searchText = [
+      exercise.name,
+      exercise.exercise_summary,
+      exercise.notes
+    ].filter(text => text).join(' ').toLowerCase();
     
-    // Lazy load YouTube iframe API
-    if (!window.YT) {
-      await this.loadYouTubeAPI();
-    }
+    // Create keyword index
+    const keywords = this.extractKeywords(searchText);
+    keywords.forEach(keyword => {
+      if (!this.searchIndex[keyword]) {
+        this.searchIndex[keyword] = [];
+      }
+      this.searchIndex[keyword].push(exercise);
+    });
+  }
+  
+  search(query) {
+    const queryLower = query.toLowerCase();
+    const results = [];
     
-    this.player = new YT.Player(this.containerId, {
-      videoId: this.extractVideoId(this.videoUrl),
-      playerVars: {
-        'playsinline': 1,
-        'rel': 0,
-        'modestbranding': 1
-      },
-      events: {
-        'onReady': this.onPlayerReady.bind(this),
-        'onStateChange': this.onPlayerStateChange.bind(this)
+    // Direct name matches (highest priority)
+    const nameMatches = this.exercises.filter(ex => 
+      ex.name.toLowerCase().includes(queryLower)
+    );
+    
+    // Summary content matches (high priority)
+    const summaryMatches = this.exercises.filter(ex => 
+      ex.exercise_summary?.toLowerCase().includes(queryLower)
+    );
+    
+    // Keyword matches (medium priority)
+    const keywordMatches = this.searchKeywords(queryLower);
+    
+    // Combine and rank results
+    return this.rankSearchResults(nameMatches, summaryMatches, keywordMatches, query);
+  }
+  
+  searchKeywords(query) {
+    const queryWords = query.split(' ');
+    const matches = new Set();
+    
+    queryWords.forEach(word => {
+      Object.keys(this.searchIndex).forEach(keyword => {
+        if (keyword.includes(word)) {
+          this.searchIndex[keyword].forEach(exercise => matches.add(exercise));
+        }
+      });
+    });
+    
+    return Array.from(matches);
+  }
+  
+  rankSearchResults(nameMatches, summaryMatches, keywordMatches, query) {
+    const scored = [];
+    const seen = new Set();
+    
+    // Score and combine results
+    nameMatches.forEach(ex => {
+      if (!seen.has(ex.name)) {
+        scored.push({
+          exercise: ex,
+          score: 100,
+          matchType: 'name',
+          excerpt: this.getExcerpt(ex, query)
+        });
+        seen.add(ex.name);
       }
     });
     
-    this.isLoaded = true;
+    summaryMatches.forEach(ex => {
+      if (!seen.has(ex.name)) {
+        scored.push({
+          exercise: ex,
+          score: 80,
+          matchType: 'summary',
+          excerpt: this.getExcerpt(ex, query)
+        });
+        seen.add(ex.name);
+      }
+    });
+    
+    keywordMatches.forEach(ex => {
+      if (!seen.has(ex.name)) {
+        scored.push({
+          exercise: ex,
+          score: 60,
+          matchType: 'keyword',
+          excerpt: this.getExcerpt(ex, query)
+        });
+        seen.add(ex.name);
+      }
+    });
+    
+    return scored.sort((a, b) => b.score - a.score);
   }
   
-  onPlayerReady(event) {
-    // Player is ready for interaction
-    this.addCustomControls();
+  getExcerpt(exercise, query) {
+    const summary = exercise.exercise_summary || '';
+    const queryLower = query.toLowerCase();
+    const summaryLower = summary.toLowerCase();
+    
+    const index = summaryLower.indexOf(queryLower);
+    if (index === -1) return summary.substring(0, 150) + '...';
+    
+    const start = Math.max(0, index - 50);
+    const end = Math.min(summary.length, index + query.length + 50);
+    
+    return (start > 0 ? '...' : '') + 
+           summary.substring(start, end) + 
+           (end < summary.length ? '...' : '');
   }
   
-  onPlayerStateChange(event) {
-    // Track video engagement
-    if (event.data === YT.PlayerState.ENDED) {
-      this.markAsWatched();
-    }
-  }
-  
-  addCustomControls() {
-    // Add speed control, bookmarking, etc.
-  }
-  
-  markAsWatched() {
-    // Update local storage with watch status
-    const watchHistory = JSON.parse(localStorage.getItem('videoWatchHistory') || '{}');
-    watchHistory[this.videoUrl] = {
-      watched: true,
-      timestamp: Date.now()
-    };
-    localStorage.setItem('videoWatchHistory', JSON.stringify(watchHistory));
+  extractKeywords(text) {
+    const stopWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'];
+    return text.split(/\W+/)
+               .filter(word => word.length > 2 && !stopWords.includes(word))
+               .map(word => word.toLowerCase());
   }
 }
 ```
 
-### 3. Enhanced ProgressTracker Component
+### 3. Content Analytics Component
 ```javascript
-class ProgressTracker {
+class ContentAnalytics {
   constructor() {
-    this.data = this.loadProgress();
-    this.videoAnalytics = this.loadVideoAnalytics();
+    this.analytics = this.loadAnalytics();
   }
   
-  calculateWeekProgress(weekNumber) {
-    // Calculate completion percentage including video engagement
-    const weekData = this.data.weeks[weekNumber];
-    const exerciseCompletion = this.calculateExerciseCompletion(weekData);
-    const videoEngagement = this.calculateVideoEngagement(weekNumber);
+  trackSummaryRead(exerciseId) {
+    if (!this.analytics.summaryReads) this.analytics.summaryReads = {};
+    if (!this.analytics.summaryReads[exerciseId]) {
+      this.analytics.summaryReads[exerciseId] = {
+        count: 0,
+        firstRead: Date.now(),
+        totalTime: 0
+      };
+    }
+    this.analytics.summaryReads[exerciseId].count++;
+    this.saveAnalytics();
+  }
+  
+  trackSummaryTime(exerciseId, timeSpent) {
+    if (!this.analytics.summaryReads) this.analytics.summaryReads = {};
+    if (!this.analytics.summaryReads[exerciseId]) {
+      this.analytics.summaryReads[exerciseId] = { count: 0, totalTime: 0 };
+    }
+    this.analytics.summaryReads[exerciseId].totalTime += timeSpent;
+    this.saveAnalytics();
+  }
+  
+  getContentEngagementData() {
+    const summaryReads = this.analytics.summaryReads || {};
+    const exerciseEngagement = Object.entries(summaryReads).map(([id, data]) => ({
+      exerciseId: id,
+      readCount: data.count,
+      avgTimeSpent: data.totalTime / data.count,
+      totalTimeSpent: data.totalTime
+    }));
     
     return {
-      exerciseCompletion,
-      videoEngagement,
-      overall: (exerciseCompletion + videoEngagement) / 2
+      totalSummariesRead: Object.keys(summaryReads).length,
+      averageTimePerSummary: this.calculateAverageTime(summaryReads),
+      mostReadExercises: exerciseEngagement.sort((a, b) => b.readCount - a.readCount).slice(0, 10),
+      longestStudiedExercises: exerciseEngagement.sort((a, b) => b.totalTimeSpent - a.totalTimeSpent).slice(0, 10)
     };
   }
   
-  calculateVideoEngagement(weekNumber) {
-    // Calculate percentage of videos watched for the week
-    const weekVideos = this.getWeekVideos(weekNumber);
-    const watchedVideos = weekVideos.filter(url => this.isVideoWatched(url));
-    return weekVideos.length ? (watchedVideos.length / weekVideos.length) * 100 : 100;
-  }
-  
-  updateExerciseStatus(weekNum, dayNum, blockName, exerciseIndex) {
-    // Update completion status and save to localStorage
-  }
-  
-  trackVideoWatch(videoUrl) {
-    this.videoAnalytics.watches = this.videoAnalytics.watches || {};
-    this.videoAnalytics.watches[videoUrl] = (this.videoAnalytics.watches[videoUrl] || 0) + 1;
-    this.saveVideoAnalytics();
+  generateLearningInsights() {
+    const engagement = this.getContentEngagementData();
+    const insights = [];
+    
+    if (engagement.averageTimePerSummary > 60) {
+      insights.push({
+        type: 'positive',
+        message: 'Great job taking time to understand each exercise thoroughly!'
+      });
+    }
+    
+    if (engagement.totalSummariesRead > 50) {
+      insights.push({
+        type: 'achievement',
+        message: 'Exercise Explorer: You\'ve read over 50 exercise descriptions!'
+      });
+    }
+    
+    return insights;
   }
 }
 ```
 
-## Performance Targets
+## Performance Targets with Content
 
 ### Loading Performance
 - **First Contentful Paint**: < 1.2s
-- **Largest Contentful Paint**: < 2.5s (excluding videos)
+- **Largest Contentful Paint**: < 2.5s (including summary content)
 - **Time to Interactive**: < 3.0s
-- **Bundle Size**: < 600KB (gzipped, excluding video content)
+- **Bundle Size**: < 650KB (gzipped, including content processing)
 
-### Video Performance
-- **Video Load Time**: < 2s for first frame
-- **Lazy Loading**: Videos load only when tab is opened
-- **Bandwidth Optimization**: Adaptive quality based on connection
-- **Mobile Video Performance**: Optimized for touch and smaller screens
+### Content Performance
+- **Summary Load Time**: < 200ms for exercise summary display
+- **Search Response**: < 100ms for summary-based queries
+- **Content Indexing**: < 500ms for full exercise database indexing
+- **Progressive Loading**: Content appears incrementally for better perceived performance
 
 ### Runtime Performance
-- **60 FPS**: Smooth animations and interactions
-- **Memory Usage**: < 75MB in browser (including video players)
-- **Search Response**: < 100ms for queries
+- **60 FPS**: Smooth animations and content transitions
+- **Memory Usage**: < 85MB in browser (including content indexing)
+- **Search Performance**: < 50ms for semantic search queries
 
-## Video-Specific Considerations
+## Content-Specific Features
 
-### Video Loading Strategy
-1. **Lazy Loading**: Videos only load when user opens video tab
-2. **Thumbnail Preloading**: Generate and cache video thumbnails
-3. **Progressive Enhancement**: App works fully without videos if they fail to load
-4. **Connection Awareness**: Adapt video quality based on network conditions
+### Exercise Summary Enhancements
+1. **Smart Highlighting**: Automatic highlighting of key terms in summaries
+2. **Difficulty Assessment**: AI-powered difficulty scoring based on summary complexity
+3. **Movement Pattern Recognition**: Automatic categorization based on movement descriptions
+4. **Progressive Disclosure**: Expandable summary sections for detailed information
 
-### Mobile Video Optimization
-- **Touch Controls**: Large, touch-friendly video control buttons
-- **Orientation Support**: Automatic landscape mode for fullscreen
-- **Gesture Support**: Tap to play/pause, double-tap for fullscreen
-- **Data Usage**: Optional video preloading with user consent
+### Content Accessibility
+- **Text-to-Speech**: Built-in reading of exercise summaries
+- **High Contrast Mode**: Enhanced readability for exercise descriptions
+- **Scalable Text**: User-controlled text sizing for summaries
+- **Simplified Language**: Option to view simplified exercise descriptions
 
-### Accessibility for Videos
-- **Keyboard Navigation**: Full keyboard control of video players
-- **Screen Reader Support**: Descriptive labels for all video controls
-- **Captions**: Use YouTube's automatic captions where available
-- **Reduced Motion**: Respect user's motion preferences
-
-## Browser Support
-
-### Primary Support
-- Chrome 90+ (full video support)
-- Firefox 88+ (full video support)
-- Safari 14+ (full video support)
-- Edge 90+ (full video support)
-
-### Mobile Support
-- iOS Safari 14+ (optimized video experience)
-- Chrome Mobile 90+ (full video support)
-- Samsung Internet 14+ (optimized video experience)
-
-### Video API Support
-- YouTube iframe API compatibility
-- Intersection Observer for lazy loading
-- Fullscreen API support
-
-## Deployment Strategy
-
-### Build Process
-1. **Development**: Vite dev server with hot reloading and video testing
-2. **Testing**: Automated testing including video integration testing
-3. **Production**: Optimized build with video content optimization
-
-### Video Content Delivery
-- **YouTube CDN**: Leverage YouTube's global CDN for video delivery
-- **Thumbnail Caching**: Cache video thumbnails for faster loading
-- **Fallback Strategy**: Graceful degradation when videos are unavailable
-
-## Success Metrics
-
-### User Experience
-- **Task Completion Rate**: > 95% for core workflows including video interaction
-- **User Satisfaction**: > 4.5/5 in usability testing
-- **Mobile Usability**: > 90% in mobile UX scoring
-- **Video Engagement**: > 70% of users watch at least one demonstration video
-
-### Video-Specific Metrics
-- **Video Completion Rate**: > 60% of started videos watched to completion
-- **Video Load Success**: > 95% successful video loads
-- **Mobile Video Performance**: < 3s average video start time on mobile
-
-### Technical Performance
-- **Lighthouse Score**: > 90 for all categories (excluding video-heavy pages)
-- **Core Web Vitals**: All metrics in "Good" range
-- **Accessibility**: WCAG 2.1 AA compliance including video accessibility
-
-## Risk Mitigation
-
-### Video-Specific Risks
-1. **YouTube API Changes**: Monitor API updates and maintain fallback strategies
-2. **Video Availability**: Handle deleted or private videos gracefully
-3. **Bandwidth Limitations**: Provide video quality options and data usage warnings
-4. **Copyright Issues**: Ensure proper attribution and respect for content creators
-
-### Technical Risks
-1. **Performance Issues**: Regular performance audits including video impact
-2. **Browser Compatibility**: Comprehensive testing matrix including video features
-3. **Data Integrity**: Validation and error handling for video URLs
-
-## Future Enhancements
-
-### Version 2.0 Features
-- **Social Features**: Share progress and compete with others, share favorite videos
-- **Advanced Video Features**: 
-  - Video annotations and markers
-  - Custom playlists
-  - Video-based challenges
-- **Wearable Integration**: Sync with fitness trackers
-- **AI Recommendations**: Personalized exercise modifications based on video engagement
-
-### Version 3.0 Features
-- **Offline PWA**: Full offline functionality with downloaded videos
-- **Advanced Video Analytics**: Heatmaps showing most replayed video sections
-- **Custom Video Content**: Allow users to upload their own demonstration videos
-- **Multi-language Support**: Internationalization with localized video content
+### Learning Features
+- **Comprehension Tracking**: Monitor user understanding of exercise concepts
+- **Knowledge Building**: Progressive complexity in exercise descriptions
+- **Concept Linking**: Related exercise suggestions based on movement patterns
+- **Mastery Assessment**: Self-evaluation tools for exercise understanding
 
 ## Conclusion
 
-This enhanced plan integrates video demonstrations as a core feature of the speed training visualization app. By leveraging the YouTube URLs in the training plan data, users will have immediate access to proper exercise demonstrations, significantly improving their ability to perform exercises correctly and safely.
+This enhanced design integrates the comprehensive exercise summaries as a core feature of the training visualization app. By leveraging the detailed `exercise_summary` data, users will have immediate access to thorough exercise descriptions, significantly improving their understanding of proper technique, movement patterns, and training objectives.
 
-The video integration is designed to be performant, accessible, and mobile-friendly while maintaining the clean, modern interface. The phased approach ensures that video features are built incrementally with proper testing and optimization at each stage.
+The integration of exercise summaries transforms the app from a simple workout tracker into a comprehensive learning platform that combines structured training data, detailed exercise descriptions, progress tracking, and video demonstrations. This creates an educational training companion that helps users not just follow workouts, but truly understand the science and technique behind each movement.
 
-The combination of structured training data, progress tracking, and integrated video demonstrations creates a comprehensive digital training companion that goes far beyond simple workout tracking. 
+The design emphasizes progressive disclosure of information, allowing users to access as much or as little detail as they need, while maintaining a clean and intuitive interface optimized for both mobile and desktop experiences. 
