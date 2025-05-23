@@ -1,0 +1,1310 @@
+{
+  "program_title": "6 week field day program",
+  "program_goal": "To enhance athletes speed, acceleration, change of direction/agility and movement proficiency.",
+  "program_description": "This program was designed to be simple enough to follow for HS/College athletes training solo or with their team as well as for the general fitness seeker who still is looking to improve performance. The Field Day Program consists of 3 days. Day 1 is focused on Acceleration. Day 2 is focused on top end speed. Day 3 is focused on change of direction, lateral movements and agility. Each Day consists of a daily warm up, drills, plyometrics and then specific focused workouts to improve the focus of that day. In total, this program is 18 total days of workouts. This program progresses slowly each week as needed to build upon skill work and drills. The purpose of this is to expose athletes with a baseline of movement proficiency and gradually increase their skill through more difficult progressions. It is important to not skip steps. It is also important to note that NOT every week we will increase intensity or movement difficulty and that should be time spent on mastering a movement. If you feel you need to stick with a lesser advanced version, or repeat a week until you mastered a movement, please do so! Go at the pace that best suits you! The workouts + warm up are designed to take 30-45 minutes total. I advocate for you to take as much rest as you need after movements to feel fully fresh for each rep. The reason why is that while SPEED/AGILITY work should be done at max intensity and focus, the focus is NOT on excessive volume or tiring the athlete just for the sake of tiring the athlete. A lot of programs you see online labeled as speed/agility programs are actually conditioning workouts. This is where the field day program stands out! I want you to be fresh each rep so you can be fast! If you complete every drill, read the notes, and do each drill with intent, you will see improvements! It is recommended to NOT do this workout 3 days in a row and ideally you do it every other day such as MWF or T/Th/Sat. Be sure to watch all the mini demo videos beforehand as well.",
+  "medical_disclaimer": "Like any online program or fitness advice, please consult with a doctor first prior to completing any workout. Modify exercises as needed and be sure to consult with a doctor and health care provider before beginning any workout program.",
+  "workout_order_instruction": "Go in order from Warm up to A Block then B Block, then C Block then D Block.",
+  "author_contact": "Follow me on Instagram and Twitter @ JoeAratari. Visit me online at JoeAratari.com",
+  "weeks": [
+    {
+      "week_number": 1,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) HURDLE HOP Progression 1",
+                  "sets_reps": "3x5 each foot",
+                  "notes": "Watch video and do progression #1 only. If no hurdles, use cones or immaginary hurdles",
+                  "video_url": "https://www.youtube.com/watch?v=RU5Fjxrglio"
+                },
+                {
+                  "name": "A2) Learn to Skip",
+                  "sets_reps": "3x10 Yards F/B",
+                  "video_url": "https://youtu.be/6dXVXnTU6IQ"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) No Countermovement Broad Jump + Stick",
+                  "sets_reps": "3x3 Reps",
+                  "video_url": "https://youtu.be/wjBrhKM90Sg"
+                },
+                {
+                  "name": "B2) Countermovement Vertical Jump + Stick",
+                  "sets_reps": "3x3 Reps",
+                  "video_url": "https://youtu.be/xN_9TLVCkwQ"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Wall Tension ISO holds",
+                  "sets_reps": "3 reps per side\n5 second hold each",
+                  "notes": "-Think to create as much FORCE as possible",
+                  "video_url": "https://youtu.be/H5sA2jxJyjI"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Push Up Sprints",
+                  "sets_reps": "x4, 10 yards\n2 Right foot\n2 Left foot",
+                  "notes": "-Full 60 seconds rest between each sprint",
+                  "video_url": "https://youtu.be/RDp1fbXm8H8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Skips",
+                  "sets_reps": "3x10 Yards F/B",
+                  "notes": "Be Twitchy and fast with each rep",
+                  "video_url": "https://www.youtube.com/watch?v=6dXVXnTU6IQ"
+                },
+                {
+                  "name": "A2) 45 Degree Bound + Stick",
+                  "sets_reps": "3x5 each foot",
+                  "notes": "Get out as far as you can with each Jump",
+                  "video_url": "https://www.youtube.com/watch?v=Zbj5SKZUExw"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Pogos",
+                  "sets_reps": "3x10 yards",
+                  "notes": "Be Springy and elastic!",
+                  "video_url": "https://youtu.be/5YBzYZPI-iE"
+                },
+                {
+                  "name": "B2) Backwards Sprint",
+                  "sets_reps": "3x20 yards",
+                  "video_url": "https://www.youtube.com/watch?v=Uu0CK4Nnkqc"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Rolling (walk in sprints)",
+                  "sets_reps": "2x20 yards",
+                  "notes": "-2 Minute rest between each",
+                  "video_url": "https://www.youtube.com/watch?v=nwuZOplwCBk"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) 20 Yard Sprint-ALL OUT SPRINT",
+                  "sets_reps": "x2 Total",
+                  "notes": "-2 Minutes rest between each\n-Time if possible (laser or handtime)",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Learn to Lateral March",
+                  "sets_reps": "3x10 Yards L/R",
+                  "video_url": "https://youtu.be/Q-VAsjjspUA"
+                },
+                {
+                  "name": "A2) Learn to Lateral A-Skip",
+                  "sets_reps": "3x10 Yards L/R",
+                  "notes": "Go slow before adding speed\nGet distance between each skip once mastered",
+                  "video_url": "https://youtu.be/FTgfpkjQHCY"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Lateral Leap to 2 foot stick",
+                  "sets_reps": "3x3 each side",
+                  "video_url": "https://youtu.be/DBRKZ-rBySU"
+                },
+                {
+                  "name": "B2) Lateral Leap to 1 foot Stick",
+                  "sets_reps": "3x3 each side",
+                  "video_url": "https://youtu.be/imUZC92JmHw"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) Crossover Sprints",
+                  "sets_reps": "x2 left and right\nx15 yards\n(4 total)",
+                  "notes": "-Full 60 seonds rest between\n-Race if you have a partner",
+                  "video_url": "https://www.youtube.com/watch?v=qtbswmXBKXY"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) 8 Meter Curved Sprints",
+                  "sets_reps": "3 each way\n6 Total",
+                  "notes": "-Angles/Edges, Stay close to the line at max speed!\n-Full 60 seconds rest between each sprint",
+                  "video_url": "https://www.youtube.com/watch?v=2NPc6loEWO4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week_number": 2,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) HURDLE HOP Progression #2",
+                  "sets_reps": "3x5 each foot",
+                  "notes": "Watch video and do progression #2 only. If no hurdles, use cones or immaginary hurdles",
+                  "video_url": "https://www.youtube.com/watch?v=RU5Fjxrglio"
+                },
+                {
+                  "name": "A2) Mini Bounds",
+                  "sets_reps": "3x15 yards F/B",
+                  "video_url": "https://youtu.be/B3ANndQH0bA"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) No Countermovement Broad Jump + Stick",
+                  "sets_reps": "3x5 jumps",
+                  "video_url": "https://youtu.be/wjBrhKM90Sg"
+                },
+                {
+                  "name": "B2) Split Squat Jump + Pause",
+                  "sets_reps": "3x5 each side",
+                  "notes": "Jump up and switch legs + stick landing\nFocus is on height",
+                  "video_url": "https://www.youtube.com/watch?v=XtpG2I0YPyA"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Wall Tension ISO holds",
+                  "sets_reps": "5 reps per side\n5 second hold each",
+                  "notes": "-Think to create as much FORCE as possible",
+                  "video_url": "https://youtu.be/H5sA2jxJyjI"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Push Up Sprints",
+                  "sets_reps": "x6, 10 yards\n3 Right foot\n3 Left foot",
+                  "notes": "-Full 60 seconds rest between each sprint",
+                  "video_url": "https://youtu.be/RDp1fbXm8H8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) A-Skips",
+                  "sets_reps": "3x20 Yards F/B",
+                  "video_url": "https://youtu.be/-As5gba51Os"
+                },
+                {
+                  "name": "A2) Dynamic Hamstring Carch",
+                  "sets_reps": "3x5 each leg",
+                  "video_url": "https://youtube.com/shorts/3vGyB_HSCEI?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Quick Double Tap Pogos",
+                  "sets_reps": "3x15 yards",
+                  "notes": "Be as quick as you can on the double hop",
+                  "video_url": "https://youtube.com/shorts/_VGev7F9cbU?feature=share"
+                },
+                {
+                  "name": "B2) Backwards Sprint",
+                  "sets_reps": "3x20 yards",
+                  "video_url": "https://www.youtube.com/watch?v=Uu0CK4Nnkqc"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Rolling (walk in sprints)",
+                  "sets_reps": "2x20 yards",
+                  "notes": "-2 Minute rest between each",
+                  "video_url": "https://www.youtube.com/watch?v=nwuZOplwCBk"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) 25 Yard Sprint-ALL OUT SPRINT",
+                  "sets_reps": "x4 Total",
+                  "notes": "-2 Minutes rest between each\n-Time if possible (laser or handtime)",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Lateral March",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://youtu.be/Q-VAsjjspUA"
+                },
+                {
+                  "name": "A2) Learn to Lateral A-Skip",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://youtu.be/FTgfpkjQHCY"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Lateral Leap to 2 foot stick",
+                  "sets_reps": "3x5 each way",
+                  "video_url": "https://youtu.be/DBRKZ-rBySU"
+                },
+                {
+                  "name": "B2) Lateral Leap to 1 foot Stick",
+                  "sets_reps": "3x5 each way",
+                  "video_url": "https://youtu.be/imUZC92JmHw"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) Crossover Sprints",
+                  "sets_reps": "x3 left and right\nx15 yards\n(6 total)",
+                  "notes": "-Full 60 seonds rest between\n-Race if you have a partner",
+                  "video_url": "https://www.youtube.com/watch?v=qtbswmXBKXY"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) 8 Meter Curved Sprints",
+                  "sets_reps": "3 each way",
+                  "notes": "-Angles/Edges, Stay close to the line at max speed!\n-1-2 min rest after each sprint",
+                  "video_url": "https://www.youtube.com/watch?v=2NPc6loEWO4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week_number": 3,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) HURDLE HOP Progression 3",
+                  "sets_reps": "3x5 each foot",
+                  "notes": "Watch video and do progression #3 only. If no hurdles, use cones or immaginary hurdles",
+                  "video_url": "https://www.youtube.com/watch?v=RU5Fjxrglio"
+                },
+                {
+                  "name": "A2) Power Skip",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://youtu.be/CsFqGt3tg_s"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Continuous Broad Jumps",
+                  "sets_reps": "3x3",
+                  "notes": "Stick the last jump",
+                  "video_url": "https://www.youtube.com/watch?v=AFc5UaDX9EY"
+                },
+                {
+                  "name": "B2) Depth Jump For Height",
+                  "sets_reps": "3x3 Reps",
+                  "notes": "Get into your hips and think HEIGHT",
+                  "video_url": "https://youtu.be/LygAKWyFj40"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Wall Drill-Quick Switches",
+                  "sets_reps": "3x6 (3 each side)",
+                  "video_url": "https://youtu.be/UnCN82vSQ8M"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Switching Gear Sprints",
+                  "sets_reps": "2x20 yards",
+                  "notes": "-Full 60 seonds rest between each sprint",
+                  "video_url": "https://youtu.be/q7U7PHYzcQw"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) A-Skips",
+                  "sets_reps": "3x10 yards",
+                  "video_url": "https://youtu.be/-As5gba51Os"
+                },
+                {
+                  "name": "A2) Bounds",
+                  "sets_reps": "3x10 yards",
+                  "video_url": "https://www.youtube.com/watch?v=qGqzOVKA5TM"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Split squat jump + Pause",
+                  "sets_reps": "3x5 each leg",
+                  "video_url": "https://www.youtube.com/watch?v=XtpG2I0YPyA"
+                },
+                {
+                  "name": "B2) Medball Alternating Drop Backs",
+                  "sets_reps": "3x10 yards",
+                  "video_url": "https://youtu.be/-hFbi1zxQ1U"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Backward Sprint",
+                  "sets_reps": "4x20 Yards",
+                  "notes": "-2 Minute rest between each",
+                  "video_url": "https://www.youtube.com/watch?v=Uu0CK4Nnkqc"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) Sprint Build ups",
+                  "sets_reps": "x3 Total",
+                  "notes": "Gradually pick up speed/intensity every 10 yards\n-FULL 4 min rest after each sprint",
+                  "video_url": "https://youtu.be/2jta64DZaEQ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Lateral Skips",
+                  "sets_reps": "3x10 yards",
+                  "video_url": "https://youtu.be/DWDe9fvOLY0"
+                },
+                {
+                  "name": "A2) Lateral Recollects",
+                  "sets_reps": "3x10 Yards to the right/left",
+                  "video_url": "https://www.youtube.com/watch?v=QOUPuOch0wY"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Lateral Double Tap Rebounding hops",
+                  "sets_reps": "3x3 each side",
+                  "notes": "Quickness off the ground",
+                  "video_url": "https://www.youtube.com/watch?v=L-hmMuFh6Xk"
+                },
+                {
+                  "name": "B2) 90 Degree Jump + Stick",
+                  "sets_reps": "3x5 each way",
+                  "notes": "-Focus on extending and rotating as far as you can",
+                  "video_url": "https://youtu.be/Dh2xEBucIn8"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) 5-10-5 COD Drill",
+                  "sets_reps": "3 each way",
+                  "notes": "-Full 60 seonds rest between\n-Race if you have a partner",
+                  "video_url": "https://youtu.be/dkVdcMFauP0"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) Snake Sprints",
+                  "sets_reps": "4x20 yards",
+                  "notes": "-2 Minutes rest between each\n-Great for angles + edges",
+                  "video_url": "https://www.youtube.com/watch?v=2NPc6loEWO4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week_number": 4,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) HURDLE HOP Progression #4",
+                  "sets_reps": "3x5 each foot",
+                  "notes": "Watch video and do progression #4 only. If no hurdles, use cones or immaginary hurdles",
+                  "video_url": "https://www.youtube.com/watch?v=RU5Fjxrglio"
+                },
+                {
+                  "name": "A2) Power Skip",
+                  "sets_reps": "3x20 yards",
+                  "video_url": "https://youtu.be/CsFqGt3tg_s"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Continuous Broad Jumps",
+                  "sets_reps": "3x5",
+                  "notes": "Stick the last jump",
+                  "video_url": "https://www.youtube.com/watch?v=AFc5UaDX9EY"
+                },
+                {
+                  "name": "B2) Depth Jump For Height",
+                  "sets_reps": "3x5 Reps",
+                  "video_url": "https://youtu.be/LygAKWyFj40"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Wall Drill-Quick Switches",
+                  "sets_reps": "3x10 (5 each side)",
+                  "video_url": "https://youtu.be/UnCN82vSQ8M"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Switching Gear Sprints",
+                  "sets_reps": "2x 20 yards",
+                  "notes": "-Full 60 seonds rest between each sprint",
+                  "video_url": "https://youtu.be/q7U7PHYzcQw"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) B-SKIP WALKS (WATCH FULL VIDEO)",
+                  "sets_reps": "3x15 yards",
+                  "notes": "-ONLY Do the B-Skip WALK to get the pattern down",
+                  "video_url": "https://www.youtube.com/watch?v=1h4Cr1XA-4Q"
+                },
+                {
+                  "name": "A2) Bounds",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://www.youtube.com/watch?v=qGqzOVKA5TM"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Rebounding Split Squat Jumps",
+                  "sets_reps": "3x5 each side",
+                  "notes": "-Think to be twitchy!",
+                  "video_url": "https://youtu.be/I4Uu2KnD7IQ"
+                },
+                {
+                  "name": "B2) Medball Alternating Drop Backs",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://youtu.be/-hFbi1zxQ1U"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Backward Sprint",
+                  "sets_reps": "4x20 yards",
+                  "notes": "-2 Minute rest between each",
+                  "video_url": "https://www.youtube.com/watch?v=Uu0CK4Nnkqc"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) Sprint Build ups",
+                  "sets_reps": "x4 Total",
+                  "notes": "Gradually pick up speed/intensity every 10 yards\n-FULL 4 min rest after each sprint",
+                  "video_url": "https://youtu.be/2jta64DZaEQ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Lateral Skips",
+                  "sets_reps": "3x15 yards",
+                  "video_url": "https://youtu.be/DWDe9fvOLY0"
+                },
+                {
+                  "name": "A2) Lateral Recollects",
+                  "sets_reps": "3x15 Yards to the right/left",
+                  "video_url": "https://www.youtube.com/watch?v=QOUPuOch0wY"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Lateral Double Tap Rebounding hops",
+                  "sets_reps": "3x5 each side",
+                  "notes": "Quickness off the ground",
+                  "video_url": "https://www.youtube.com/watch?v=L-hmMuFh6Xk"
+                },
+                {
+                  "name": "B2) Rotational Jump Sequence",
+                  "sets_reps": "3x5 each way",
+                  "video_url": "https://youtu.be/-JmC5Nf4Fdc"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) Quick Burst Reactive Change of Direction Drill",
+                  "sets_reps": "x4 total\nTurn Left x2\nTurn Right x2",
+                  "notes": ":60 Rest Between each rep\n-Great for hip health/crossover speed",
+                  "video_url": "https://youtube.com/shorts/BaoeFJotIzU?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) Snake Sprints",
+                  "sets_reps": "6x20 yards",
+                  "notes": "-2 Minutes rest between each\n-Great for angles + edges",
+                  "video_url": "https://www.youtube.com/watch?v=2NPc6loEWO4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week_number": 5,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Seated Acceleration Drill",
+                  "sets_reps": "3x10 yards",
+                  "notes": "Project out and burst for yards",
+                  "video_url": "https://youtube.com/shorts/Pt3WE7YHjwI?feature=share"
+                },
+                {
+                  "name": "A2) Band resisted angle step + sprint",
+                  "sets_reps": "x3 steps each\nx2 10 sprints",
+                  "notes": "-3 steps each side first. Then 2 sprints each side x10 yds",
+                  "video_url": "https://youtu.be/PJa3fvAnpxE"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Double hop jump + Reach",
+                  "sets_reps": "3x5",
+                  "video_url": "https://www.youtube.com/watch?v=ZZcpQdPji6k"
+                },
+                {
+                  "name": "B2) Vertical to Broad Jump",
+                  "sets_reps": "3x3",
+                  "video_url": "https://youtube.com/shorts/hCPC7YSSSII?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Drop Back Burst Sprints",
+                  "sets_reps": "4 x 10 yards\n2 Left back\n2 Right back",
+                  "notes": "False Step work",
+                  "video_url": "https://www.youtube.com/watch?v=cyln4C5DAGw"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Hill Sprints (reinforces acceleration angles)",
+                  "sets_reps": "4x10 yards",
+                  "notes": "-Find a moderate incline\n-Full out sprint through. 90 rest between\n-If no hill, do 15 yard sprints on field/court",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) B-Skip",
+                  "sets_reps": "3x10 yards",
+                  "notes": "-Practice the second part of the video",
+                  "video_url": "https://www.youtube.com/watch?v=1h4Cr1XA-4Q"
+                },
+                {
+                  "name": "A2) Single Leg Running",
+                  "sets_reps": "3x10 Yards each foot",
+                  "video_url": "https://www.youtube.com/watch?v=otnaWCsW8j8"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Rebounding Split Squat Jumps",
+                  "sets_reps": "3x5 each leg",
+                  "notes": "Think to be twitchy and quick off the ground",
+                  "video_url": "https://youtu.be/I4Uu2KnD7IQ"
+                },
+                {
+                  "name": "B2) Straight leg run",
+                  "sets_reps": "3x20 yards",
+                  "notes": "-Learn to be bouncy first, then focus on speed + distance",
+                  "video_url": "https://youtu.be/z9OtDkjl9Qg"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Power Gallops",
+                  "sets_reps": "x20 yards",
+                  "notes": "-:90 second rest between each",
+                  "video_url": "https://www.youtube.com/shorts/u6C5J5AXlFs"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) 40 Yard Sprint-ALL OUT SPRINT",
+                  "sets_reps": "x2 Total",
+                  "notes": "-4 Minutes rest between each\n-Time if possible (laser or handtime)",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Lateral alternating A Skip",
+                  "sets_reps": "3x10 yards L/R",
+                  "video_url": "https://www.youtube.com/watch?v=Hbu3BOz-4t8"
+                },
+                {
+                  "name": "A2) Open Up Change of Direction Drill",
+                  "sets_reps": "3x3 each way",
+                  "notes": "Sprint up, then quickly open up and sprint back",
+                  "video_url": "https://youtube.com/shorts/3ySeoDA1AvQ?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Continuous Lateral Bounds To Vertical Jumps",
+                  "sets_reps": "3x3 each side",
+                  "notes": "Jump as far as you can over and then up",
+                  "video_url": "https://www.youtube.com/watch?v=1d-BjhXo4Ag"
+                },
+                {
+                  "name": "B2) Rotational Overhead MB Slams",
+                  "sets_reps": "3x3 each side",
+                  "video_url": "https://youtu.be/0j0NN8xE02o"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) Cirlce Change of Direction",
+                  "sets_reps": "x3 each way",
+                  "notes": "-About 8-10 yard big circle\n-Full 60 seonds rest between",
+                  "video_url": "https://www.youtube.com/watch?v=yX8DbwTJvPI"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) Goal line Tag Game",
+                  "sets_reps": "x6",
+                  "notes": "1-2 min rest after each round\n3 reps on offense and defense"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week_number": 6,
+      "days": [
+        {
+          "day_number": 1,
+          "focus": "Acceleration",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Seated Acceleration Drill",
+                  "sets_reps": "3x15 yards",
+                  "notes": "Project out and burst for yards",
+                  "video_url": "https://youtube.com/shorts/Pt3WE7YHjwI?feature=share"
+                },
+                {
+                  "name": "A2) Band resisted angle step + sprint",
+                  "sets_reps": "x3 steps each\nx2 10 sprints",
+                  "notes": "-3 steps each side first. Then 2 sprints each side x10 yds",
+                  "video_url": "https://youtu.be/PJa3fvAnpxE"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Acceleration Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Double hop jump + Reach",
+                  "sets_reps": "4x5",
+                  "video_url": "https://www.youtube.com/watch?v=ZZcpQdPji6k"
+                },
+                {
+                  "name": "B2) Depth Jump to 2 Broad Jumps",
+                  "sets_reps": "3x3",
+                  "notes": "Use a box, chair, bench",
+                  "video_url": "https://youtube.com/shorts/lgifddQQVsk?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "C1) Drop Back Burst Sprints",
+                  "sets_reps": "4 x 10 yards\n2 Left back\n2 Right back",
+                  "notes": "False Step work",
+                  "video_url": "https://www.youtube.com/watch?v=cyln4C5DAGw"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Acceleration Work",
+              "exercises": [
+                {
+                  "name": "D1) Hill Sprints (reinforces acceleration angles)",
+                  "sets_reps": "6x10 yards",
+                  "notes": "-Find a moderate incline\n-Full out sprint through. 90 rest between\n-If no hill, do 15 yard sprints on field/court",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "focus": "Top End Speed",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) B-Skip",
+                  "sets_reps": "3x20 yards",
+                  "notes": "-Practice the second part of the video",
+                  "video_url": "https://www.youtube.com/watch?v=1h4Cr1XA-4Q"
+                },
+                {
+                  "name": "A2) Single Leg Running",
+                  "sets_reps": "3x10 Yards each foot",
+                  "video_url": "https://www.youtube.com/watch?v=otnaWCsW8j8"
+                }
+              ]
+            },
+            {
+              "block_name": "B: Top End Speed Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Double Tap + Quick Switch Jump",
+                  "sets_reps": "3x5 each leg",
+                  "notes": "-Think to be twitchy!",
+                  "video_url": "https://youtu.be/D4Ah3EEnEpo"
+                },
+                {
+                  "name": "B2) Straight leg run",
+                  "sets_reps": "3x20 yards",
+                  "video_url": "https://youtu.be/z9OtDkjl9Qg"
+                }
+              ]
+            },
+            {
+              "block_name": "C: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "C1) Power Gallops",
+                  "sets_reps": "3x 20 yards",
+                  "notes": "-:90 second rest between each",
+                  "video_url": "https://www.youtube.com/shorts/u6C5J5AXlFs"
+                }
+              ]
+            },
+            {
+              "block_name": "D: Top End Speed Work",
+              "exercises": [
+                {
+                  "name": "D1) 40 Yard Sprint-ALL OUT SPRINT",
+                  "sets_reps": "x3 Total",
+                  "notes": "-4 Minutes rest between each\n-Time if possible (laser or handtime)",
+                  "video_url": "https://youtu.be/5nKe4dhIrqg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "focus": "Change of Direction/Lateral Movements/Agility",
+          "notes_general_day": "",
+          "blocks": [
+            {
+              "block_name": "Warm-up",
+              "exercises": [
+                {
+                  "name": "DAILY WARM UP VIDEO TO BE DONE PRIOR TO EACH DAY",
+                  "sets_reps": "",
+                  "video_url": "https://www.youtube.com/watch?v=FY0Yrfu3wZc"
+                }
+              ]
+            },
+            {
+              "block_name": "A: Skill Work",
+              "exercises": [
+                {
+                  "name": "A1) Lateral alternating A Skip",
+                  "sets_reps": "3x10 yards L/R",
+                  "video_url": "https://www.youtube.com/watch?v=Hbu3BOz-4t8"
+                },
+                {
+                  "name": "A2) Tracking Drill With Crossover",
+                  "sets_reps": "3x3 each way",
+                  "video_url": "https://youtube.com/shorts/KVhJcVi7Rvc?feature=share"
+                }
+              ]
+            },
+            {
+              "block_name": "B: COD/Lateral Focused Plyos/Drills",
+              "exercises": [
+                {
+                  "name": "B1) Continuous Lateral Bounds To Vertical Jumps",
+                  "sets_reps": "3x5 each side",
+                  "notes": "Jump as far as you can over and then up",
+                  "video_url": "https://www.youtube.com/watch?v=1d-BjhXo4Ag"
+                },
+                {
+                  "name": "B2) Rotational Overhead MB Slams",
+                  "sets_reps": "3x5 each side",
+                  "video_url": "https://youtu.be/0j0NN8xE02o"
+                }
+              ]
+            },
+            {
+              "block_name": "C: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "C1) Cirlce Change of Direction",
+                  "sets_reps": "x4 each way",
+                  "notes": "-About 8-10 yard big circle\n-Full 60 seonds rest between",
+                  "video_url": "https://www.youtube.com/watch?v=yX8DbwTJvPI"
+                }
+              ]
+            },
+            {
+              "block_name": "D: COD/Lateral Work",
+              "exercises": [
+                {
+                  "name": "D1) Tap Tag",
+                  "sets_reps": "x6 total reps",
+                  "notes": "-2 Minutes rest between each\n-Alternate offense vs defense\n-If SOLO (DO THIS INSTEAD)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conclusion": "I want to extend a huge THANK YOU for following along with this program. I hope through following this program over the last 6 weeks you improved your speed, movement ability, knowledge while having fun and working hard. Please let me know if there is anything else I can assist you with in the realm of sport performance and be sure to follow me along at all my social media handles simple at JoeAratari."
+}
